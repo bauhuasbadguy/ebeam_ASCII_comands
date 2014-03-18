@@ -10,21 +10,21 @@ This repositry contains a module file *(ASCIIwriter.py)* and an example file usi
 *(ringsASCIIfilewriter.py)* and a example output file *(17814ringsdosetest.txt)*.
 The ASCIIwriter.py module contains the following commands:-
 
-circledraw(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, theradiushalfwaybetweeninnerRandouterR, layernumber(optional), numberofvertecies(also optional))
+**circledraw**(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, theradiushalfwaybetweeninnerRandouterR, layernumber(optional), numberofvertecies(also optional))
 
-polydraw(dose, layer, xpoints, ypoints)
+**polydraw**(dose, layer, xpoints, ypoints)
 
-elipsedraw(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, majorradius, minorradius rotation, layer(optional), numberofverticies(also optional))
+**elipsedraw**(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, majorradius, minorradius rotation, layer(optional), numberofverticies(also optional))
 
-textdraw(dose, trackwidth, xpositionofcenter, ypositionofcenter, textheight, textangle, ualign, valign, textiteld, layer(optional))
+**textdraw**(dose, trackwidth, xpositionofcenter, ypositionofcenter, textheight, textangle, ualign, valign, textiteld, layer(optional))
 
-circlewrite(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, theradiushalfwaybetweeninnerRandouterR, fileID, layernumber(optional), numberofvertecies(also optional))
+**circlewrite**(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, theradiushalfwaybetweeninnerRandouterR, fileID, layernumber(optional), numberofvertecies(also optional))
 
-polywrite(dose, layer, fileID, xpoints, ypoints)
+**polywrite**(dose, layer, fileID, xpoints, ypoints)
 
-elipsewrite(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, majorradius, minorradius rotation, fileID layer(optional), numberofverticies(also optional))
+**elipsewrite**(dose, trackwidth, xposofcenterofcirle, yposofcenterofcircle, majorradius, minorradius rotation, fileID layer(optional), numberofverticies(also optional))
 
-textwrite(dose, trackwidth, xpositionofcenter, ypositionofcenter, textheight, textangle, ualign, valign, textiteld, fileID, layer(optional))
+**textwrite**(dose, trackwidth, xpositionofcenter, ypositionofcenter, textheight, textangle, ualign, valign, textiteld, fileID, layer(optional))
 
 Future developments
 --------------------
