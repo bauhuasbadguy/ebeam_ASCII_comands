@@ -1,7 +1,7 @@
 
 import ASCIIwriter as AS
 import os
-filename = '18314ringsdosetest.txt'
+filename = '19314ringsdosetest.txt'
 
 
 
@@ -23,7 +23,7 @@ dxoff = range(0, 3750 , 750) #list of  the x offsets in order to put each set of
 dyoff = range(0, 3750 , 750)#list of  the x offsets in order to put each set of 
 #objects with different doses at different postions
 
-#Loop for putting the rings down, puts down 2 sets of rings one higher
+#Loop for putting the ringsw down, puts down 2 sets of rings one higher
 #than the other in y
 count = 0
 for y1 in range(4):#moves up a step in y draws all the squares in x and moves on
@@ -38,8 +38,8 @@ for y1 in range(4):#moves up a step in y draws all the squares in x and moves on
                     outrad = ringdiams[y] / 2
                     track = tracks[x]
                     crad = outrad - (track / 2)
-                    xpos = poses[x] + dyoff[y1]
-                    ypos = poses[y] + lopyoff[n1] + dyoff[x1]
+                    xpos = poses[x] + dxoff[x1]
+                    ypos = poses[y] + lopyoff[n1] + dyoff[y1]
                     if track*2 < outrad:
                         lines = AS.circledraw(dose, track, xpos, ypos, crad)
                         for item in lines:
