@@ -41,7 +41,7 @@ for y1 in range(4):#moves up a step in y draws all the squares in x and moves on
                     xpos = poses[x] + dxoff[x1]
                     ypos = poses[y] + lopyoff[n1] + dyoff[y1]
                     if track*2 < outrad:
-                        lines = AS.circledraw(dose, track, xpos, ypos, crad)
+                        lines = AS.circledraw(dose, xpos, ypos, crad, track)
                         for item in lines:
                             f.write("%s\n" % item)#writes the loop to the file
 
@@ -58,8 +58,6 @@ for y1 in range(4):#moves up a step in y draws all the squares in x and moves on
                 #corner on the square
                 ys[i] = ys[i] + sqyoff[sq1] + dyoff[y1]#set the y offset on each
                 #corner on the square
-            print xs
-            print ys
             lines = AS.polydraw(dose, layer, xs, ys)
             for item in lines:
                 f.write("%s\n" % item)#writes the square to the file
